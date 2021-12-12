@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 71a98ea9e8899c243a04636ec97272fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8898816297407540362
+    second: ThanhEnemy_0
+  - first:
+      213: 8907024902009927449
+    second: ThanhEnemy_1
+  - first:
+      213: 584288576329746503
+    second: ThanhEnemy_2
+  - first:
+      213: -2831950617086599562
+    second: ThanhEnemy_3
+  - first:
+      213: 6378699018083357672
+    second: ThanhEnemy_4
+  - first:
+      213: 4873393398433346359
+    second: ThanhEnemy_5
+  - first:
+      213: -6714735001419990027
+    second: ThanhEnemy_6
+  - first:
+      213: 8193010950423016208
+    second: ThanhEnemy_7
+  - first:
+      213: -3152681197346664678
+    second: ThanhEnemy_8
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ThanhEnemy_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1352
+        width: 619
+        height: 679
+      alignment: 9
+      pivot: {x: 0.8192472, y: 0.16045702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6731197b9bd018480800000000000000
+      internalID: -8898816297407540362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThanhEnemy_1
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1229
+        width: 348
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9173cd9f4fb1c9b70800000000000000
+      internalID: 8907024902009927449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThanhEnemy_2
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 555
+        width: 710
+        height: 704
+      alignment: 9
+      pivot: {x: 0.5337369, y: 0.053429082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748047e4d5fcb1800800000000000000
+      internalID: 584288576329746503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThanhEnemy_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 82
+        width: 290
+        height: 353
+      alignment: 9
+      pivot: {x: 0.48967528, y: 0.15223742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67eda170be3e2b8d0800000000000000
+      internalID: -2831950617086599562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThanhEnemy_4
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 49
+        width: 281
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3ddfd06f0b58850800000000000000
+      internalID: 6378699018083357672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThanhEnemy_5
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 52
+        width: 300
+        height: 186
+      alignment: 9
+      pivot: {x: 0.9191813, y: 0.7253665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7337a5cb975c1a340800000000000000
+      internalID: 4873393398433346359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThanhEnemy_6
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 55
+        width: 300
+        height: 186
+      alignment: 9
+      pivot: {x: 0.16066284, y: 0.78975683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbba77a71870d2a0800000000000000
+      internalID: -6714735001419990027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThanhEnemy_7
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 43
+        width: 147
+        height: 359
+      alignment: 9
+      pivot: {x: 0.60184175, y: 0.7835688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01379dc0d0c63b170800000000000000
+      internalID: 8193010950423016208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThanhEnemy_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 43
+        width: 149
+        height: 356
+      alignment: 9
+      pivot: {x: 0.35933486, y: 0.76072687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f4916972d6f34d0800000000000000
+      internalID: -3152681197346664678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
