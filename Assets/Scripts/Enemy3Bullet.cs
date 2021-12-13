@@ -7,7 +7,7 @@ public class Enemy3Bullet : MonoBehaviour
     [SerializeField] float speed = 35f;
     [SerializeField] float timeToDestroy = 2f;
     [SerializeField] GameObject explosion;
-    [SerializeField] int damage = 50;
+    [SerializeField] int damage = 2;
     void Start()
     {
         Invoke("DestroyBullet", timeToDestroy);

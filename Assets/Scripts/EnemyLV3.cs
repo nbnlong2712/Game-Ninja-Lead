@@ -11,8 +11,9 @@ public class EnemyLV3 : Enemy
     [SerializeField] Transform shotPoint;
     [SerializeField] GameObject bullet;
 
-    void Start()
+    public override void Start()
     {
+        base.Start();
         animator = GetComponent<Animator>();
         player = FindObjectOfType<Player>();
     }

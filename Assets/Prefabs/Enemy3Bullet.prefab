@@ -138,4 +138,4 @@ MonoBehaviour:
   speed: 35
   timeToDestroy: 2
   explosion: {fileID: 36494505075774027, guid: 4b7b544c54c2223478654985aae25096, type: 3}
-  damage: 20
+  damage: 2

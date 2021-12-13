@@ -262,4 +262,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 6795436369068130966, guid: 03305e9e4f4242543986a9057d2a563a, type: 3}
   shotPoint: {fileID: 633205183026104923}
-  timeBetweenShot: 0.5
+  timeBetweenShot: 0.7

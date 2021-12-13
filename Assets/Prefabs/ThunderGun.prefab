@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126703463925647135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.95, y: -4.21, z: -1.3261678}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3027904698969421364}
@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4133724371381542733, guid: 853471eb555ebfb48b158539e5add138, type: 3}
   shotPoint: {fileID: 6162273639198653759}
-  timeBetweenShot: 0.5
+  timeBetweenShot: 0.3
 --- !u!95 &8527610550401569447
 Animator:
   serializedVersion: 3

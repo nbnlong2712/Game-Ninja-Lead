@@ -10,8 +10,9 @@ public class EnemyLV1 : Enemy
     private bool isDie;
     Player player;
 
-    void Start()
+    public override void Start()
     {
+        base.Start();
         player = FindObjectOfType<Player>();
         isDie = false;
         animator = GetComponent<Animator>();

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -9,7 +10,11 @@ public class Player : MonoBehaviour
     [SerializeField] float speed = 50f;
     new Rigidbody2D rigidbody2D;
     Animator animator;
-    [SerializeField] float health = 150f;
+    [SerializeField] int health = 8;
+
+    [SerializeField] Image[] hearts;
+    [SerializeField] Sprite fullHeart;
+    [SerializeField] Sprite lostHeart;
 
     void Start()
     {
@@ -30,12 +35,28 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
+        TakeHeart(health);
         if (health <= 0)
         {
             Die();
+        }
+    }
+
+    public void TakeHeart(int currentHealth)
+    {
+        for(int i=0; i<hearts.Length; i++)
+        {
+            if (i < currentHealth)
+            {
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = lostHeart;
+            }
         }
     }
 
@@ -43,13 +64,32 @@ public class Player : MonoBehaviour
     {
         speed = 0;
         animator.SetBool("isDeath", true);
-        GameObject.FindGameObjectWithTag("Weapon").SetActive(false);
+        destroyObjectWithTag("Weapon");
         Invoke("DestroyPlayer", 2);
     }
 
     public void DestroyPlayer()
     {
         Destroy(gameObject);
+    }
+
+    public void destroyObjectWithTag(string tag)
+    {
+        foreach (Transform child in transform)
+        {
+            if (child.tag == tag)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+    }
+
+    public void IncreaseHeart(int heart)
+    {
+        if (health + heart > 10)
+            health = 10;
+        else health += heart;
+        TakeHeart(health);
     }
 
     void Run()
@@ -68,6 +108,7 @@ public class Player : MonoBehaviour
     public void ChangeWeapon(Weapon weapon)
     {
         Destroy(GameObject.FindGameObjectWithTag("Weapon"));
+        destroyObjectWithTag("Weapon");
         Instantiate(weapon, transform.position - new Vector3(1.34f, 0, 0), transform.rotation, transform);
     }
 }

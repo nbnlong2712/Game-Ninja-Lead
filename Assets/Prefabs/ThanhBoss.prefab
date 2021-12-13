@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 8829306543988669977}
   - component: {fileID: 5033347611449371013}
   - component: {fileID: 3138189892265005459}
-  - component: {fileID: 7669969309798480554}
+  - component: {fileID: -7618118985767280340}
   m_Layer: 6
   m_Name: ThanhBoss
   m_TagString: Enemy
@@ -728,7 +728,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7669969309798480554
+--- !u!114 &-7618118985767280340
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -737,15 +737,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3383897914290790724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3a8a7ebb949df348b6942e1119b0b2b, type: 3}
+  m_Script: {fileID: 11500000, guid: 21d5db997c9c8c042b545c4580c72436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  speed: 4.5
-  timeBetweenAttack: 2
-  damage: 30
-  stopDistance: 10
-  timeAttack: 1
+  health: 0
+  speed: 0
+  timeBetweenAttack: 0
+  damage: 15
+  pickupChance: 0
+  weaponPickup: []
+  minX: 0
+  minY: 0
+  maxX: 0
+  maxY: 0
+  enemyLv1: {fileID: 0}
+  timeBetweenSummon: 6
+  timeBetweenMove: 10
 --- !u!1 &3383897914297972821
 GameObject:
   m_ObjectHideFlags: 0
