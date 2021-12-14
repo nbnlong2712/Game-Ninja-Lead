@@ -21,6 +21,9 @@ public class WaveSpawner : MonoBehaviour
     private int currentWaveIndex;
     private Transform player;
 
+    [Header("Boss")]
+    [SerializeField] GameObject boss;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -47,5 +50,12 @@ public class WaveSpawner : MonoBehaviour
             Instantiate(randomEnemy, randomSpot.position, randomSpot.rotation);
             yield return new WaitForSeconds(currentWave.timeBetweenSpawns);
         }
+        StartCoroutine(SpawnBoss());
+    }
+
+    IEnumerator SpawnBoss()
+    {
+        yield return new WaitForSeconds(30f);
+        Instantiate(boss, Vector3.zero, Quaternion.identity);
     }
 }

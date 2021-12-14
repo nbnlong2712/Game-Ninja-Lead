@@ -26,9 +26,10 @@ public class BossLv1 : Enemy
             {
                 transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
             }
-            if (Time.time > attackTime)
+            if (Time.time >= attackTime)
             {
-                attackTime += Time.time + timeBetweenAttack;
+                print(Time.time + ", " + attackTime);
+                attackTime = Time.time + timeBetweenAttack;
                 animator.SetTrigger("attack");
             }
         }
@@ -40,7 +41,7 @@ public class BossLv1 : Enemy
         {
             if(player != null)
             {
-                player.TakeDamage(2);
+                player.TakeDamage(damage);
             }
         }
     }
@@ -53,6 +54,14 @@ public class BossLv1 : Enemy
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
             shotPoint.rotation = rotation;
+            if(player.transform.position.x > transform.position.x)
+            {
+                bullet.transform.localScale = new Vector3(-1, bullet.transform.localScale.y, bullet.transform.localScale.z );
+            }
+            else
+            {
+                bullet.transform.localScale = new Vector3(1, bullet.transform.localScale.y, bullet.transform.localScale.z);
+            }
             Instantiate(bullet, shotPoint.position, shotPoint.rotation);
         }
     }

@@ -17,7 +17,7 @@ public class Weapon : MonoBehaviour
 
         //còn tham số truyền vào, tại sao lại trừ transform.position, trừ để tìm ra hướng từ vị trí chuột đến player
         //của mình, từ đó weapon sẽ hướng theo vị trí chuột (toán lớp 10, điểm A(xa, ya), điểm B(xb, yb), vector AB = (xb-xa, yb-ya)
-        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition - transform.position);  // (1)
+        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;  // (1)
 
         //Atan2 trả về góc giữa trục x và vector có tọa độ (x, y) => (truyền vào là y, x)
         //Rad2Deg (Radian to Degree) chuyển đổi radian sang độ

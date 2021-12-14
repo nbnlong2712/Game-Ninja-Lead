@@ -15,9 +15,12 @@ public class Player : MonoBehaviour
     [SerializeField] Image[] hearts;
     [SerializeField] Sprite fullHeart;
     [SerializeField] Sprite lostHeart;
+    [SerializeField] Animator hurtPanel;
+    CameraShake cameraShake;
 
     void Start()
     {
+        cameraShake = Camera.main.GetComponent<CameraShake>();
         animator = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
@@ -37,8 +40,14 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
-        TakeHeart(health);
+        if (health > 0)
+        {
+            CameraShake.Instance.ShakeCamera(8f, 0.2f);
+            if (hurtPanel != null)
+                hurtPanel.SetTrigger("hurt");
+            health -= damage;
+            TakeHeart(health);
+        }
         if (health <= 0)
         {
             Die();
@@ -47,7 +56,7 @@ public class Player : MonoBehaviour
 
     public void TakeHeart(int currentHealth)
     {
-        for(int i=0; i<hearts.Length; i++)
+        for (int i = 0; i < hearts.Length; i++)
         {
             if (i < currentHealth)
             {

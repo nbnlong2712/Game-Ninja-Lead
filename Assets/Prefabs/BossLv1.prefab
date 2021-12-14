@@ -1048,7 +1048,7 @@ Transform:
   m_GameObject: {fileID: 7022653166856455115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.1, y: -11.5, z: -3.649654}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8440625, y: 0.8010377, z: 1}
   m_Children:
   - {fileID: 7022653164772047298}
   - {fileID: 7022653166139994296}
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   health: 1000
   maxHealth: 1000
   speed: 6
-  timeBetweenAttack: 3
+  timeBetweenAttack: 4
   damage: 2
   timeDie: 5
   healthBar: {fileID: 3470393786069324980}
@@ -1150,4 +1150,4 @@ MonoBehaviour:
   weaponPickup: []
   stopDistance: 5
   shotPoint: {fileID: 7073962753375199976}
-  bullet: {fileID: 1918109691870112007, guid: 28aa8055115769642884bee6d6d4784e, type: 3}
+  bullet: {fileID: 7709815356017053169, guid: 59e5f14bdc043294c860e127cb88d28b, type: 3}

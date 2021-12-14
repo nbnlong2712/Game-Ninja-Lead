@@ -30,7 +30,7 @@ public class EnemyLV3 : Enemy
             {
                 if (Time.time > attackTime)
                 {
-                    attackTime += Time.time + timeBetweenAttack;
+                    attackTime = Time.time + timeBetweenAttack;
                     animator.SetTrigger("attack");
                 }
             }

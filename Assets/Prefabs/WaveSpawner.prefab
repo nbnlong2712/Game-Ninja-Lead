@@ -53,9 +53,9 @@ MonoBehaviour:
     - {fileID: 2756275852488855291, guid: 8cecb05198d06784182cdec408f7c0d2, type: 3}
     - {fileID: 6230475912921470870, guid: 69869f49220e1814890eb15488f56c75, type: 3}
     - {fileID: 2756275852488855291, guid: 8cecb05198d06784182cdec408f7c0d2, type: 3}
-    - {fileID: 8409263354776966596, guid: 3440ac115b4a9fd478d298e44fb8d314, type: 3}
+    - {fileID: 212675946714269818, guid: 42181ca1da07330459504fe1f0118562, type: 3}
     - {fileID: 2756275852488855291, guid: 8cecb05198d06784182cdec408f7c0d2, type: 3}
-    - {fileID: 8409263354776966596, guid: 3440ac115b4a9fd478d298e44fb8d314, type: 3}
+    - {fileID: 212675946714269818, guid: 42181ca1da07330459504fe1f0118562, type: 3}
     - {fileID: 2756275852488855291, guid: 8cecb05198d06784182cdec408f7c0d2, type: 3}
     - {fileID: 6230475912921470870, guid: 69869f49220e1814890eb15488f56c75, type: 3}
     - {fileID: 2756275852488855291, guid: 8cecb05198d06784182cdec408f7c0d2, type: 3}
@@ -72,3 +72,4 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   timeBetweenWaves: 3
+  boss: {fileID: 7022653166856455115, guid: 365ad03e14ef75745964e888fadf8d34, type: 3}

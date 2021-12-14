@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7155710284128178127, guid: 5aa663c76d428ed469e5c9987c56b66d, type: 3}
   shotPoint: {fileID: 1360997031650593451}
-  timeBetweenShot: 0.3
+  timeBetweenShot: 0.35
 --- !u!1 &7017426900017858578
 GameObject:
   m_ObjectHideFlags: 0

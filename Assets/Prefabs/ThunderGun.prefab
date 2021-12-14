@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4133724371381542733, guid: 853471eb555ebfb48b158539e5add138, type: 3}
   shotPoint: {fileID: 6162273639198653759}
-  timeBetweenShot: 0.3
+  timeBetweenShot: 0.2
 --- !u!95 &8527610550401569447
 Animator:
   serializedVersion: 3

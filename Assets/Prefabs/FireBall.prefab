@@ -113,10 +113,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e10f8f378b89844be522175ed54ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 17
-  timeToDestroy: 2
+  speed: 22
+  timeToDestroy: 3
   explosion: {fileID: 36494505075774027, guid: c2f286bc9ac595f469ab863dd3f29266, type: 3}
-  damage: 55
+  damage: 150
 --- !u!1 &6795436369473446260
 GameObject:
   m_ObjectHideFlags: 0

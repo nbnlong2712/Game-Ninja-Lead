@@ -47,6 +47,7 @@ public class Enemy : MonoBehaviour
     public virtual void Die()
     {
         speed = 0f;
+        damage = 0;
         Invoke("DestroyEnemy", timeDie);
     }
 
