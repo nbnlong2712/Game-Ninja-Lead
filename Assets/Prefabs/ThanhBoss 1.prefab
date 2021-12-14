@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 3138189892265005459}
   - component: {fileID: -9113523703724114628}
   m_Layer: 6
-  m_Name: ThanhBoss
+  m_Name: ThanhBoss 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -904,7 +904,7 @@ SpriteRenderer:
   m_SortingLayerID: -378095873
   m_SortingLayer: 1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 584288576329746503, guid: 71a98ea9e8899c243a04636ec97272fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d95616327201f974aabef3c9ef965d8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

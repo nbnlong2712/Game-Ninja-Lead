@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float speed;
     [SerializeField] protected float timeBetweenAttack;
     [SerializeField] protected int damage = 1;
-
+    [SerializeField] protected float timeDie;
     [SerializeField] Transform healthBar;
 
     [SerializeField] int pickupChance;
@@ -46,7 +46,8 @@ public class Enemy : MonoBehaviour
 
     public virtual void Die()
     {
-        Invoke("DestroyEnemy", 2);
+        speed = 0f;
+        Invoke("DestroyEnemy", timeDie);
     }
 
     public void DestroyEnemy()

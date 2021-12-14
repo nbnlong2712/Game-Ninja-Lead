@@ -729,6 +729,7 @@ MonoBehaviour:
   speed: 4.5
   timeBetweenAttack: 2
   damage: 1
+  timeDie: 1.5
   healthBar: {fileID: 8809125322764744007}
   pickupChance: 10
   weaponPickup:
