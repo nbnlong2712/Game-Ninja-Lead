@@ -17,12 +17,15 @@ public class Player : MonoBehaviour
     [SerializeField] Sprite lostHeart;
     [SerializeField] Animator hurtPanel;
     CameraShake cameraShake;
+    AudioSource audioSource;
+    [SerializeField] AudioClip damageSound;
 
     void Start()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
         animator = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -40,6 +43,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        PlaySound(damageSound);
         if (health > 0)
         {
             CameraShake.Instance.ShakeCamera(8f, 0.2f);
@@ -119,5 +123,13 @@ public class Player : MonoBehaviour
         Destroy(GameObject.FindGameObjectWithTag("Weapon"));
         destroyObjectWithTag("Weapon");
         Instantiate(weapon, transform.position - new Vector3(1.34f, 0, 0), transform.rotation, transform);
+    }
+
+    public void PlaySound(AudioClip audioClip)
+    {
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(audioClip);
+        }
     }
 }

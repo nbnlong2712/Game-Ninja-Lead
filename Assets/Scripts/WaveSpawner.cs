@@ -55,7 +55,7 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnBoss()
     {
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(15f);
         Instantiate(boss, Vector3.zero, Quaternion.identity);
     }
 }

@@ -10,6 +10,7 @@ public class BossLv1 : Enemy
     Animator animator;
     [SerializeField] Transform shotPoint;
     [SerializeField] GameObject bullet;
+    [SerializeField] GameObject enemyChild;
 
     public override void Start()
     {
@@ -28,7 +29,6 @@ public class BossLv1 : Enemy
             }
             if (Time.time >= attackTime)
             {
-                print(Time.time + ", " + attackTime);
                 attackTime = Time.time + timeBetweenAttack;
                 animator.SetTrigger("attack");
             }
@@ -63,6 +63,14 @@ public class BossLv1 : Enemy
                 bullet.transform.localScale = new Vector3(1, bullet.transform.localScale.y, bullet.transform.localScale.z);
             }
             Instantiate(bullet, shotPoint.position, shotPoint.rotation);
+        }
+    }
+
+    public void Summon()
+    {
+        if (player != null)
+        {
+            Instantiate(enemyChild, transform.position, transform.rotation);
         }
     }
 

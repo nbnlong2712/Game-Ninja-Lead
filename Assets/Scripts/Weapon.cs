@@ -7,7 +7,15 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] Transform shotPoint;
     [SerializeField] float timeBetweenShot;
+    [SerializeField] AudioClip fireSound;
+
+    AudioSource audioSource;
     float shotTime;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -39,9 +47,18 @@ public class Weapon : MonoBehaviour
             //VD: Time.time = 10, timeBetweenShot = 5, thì shotTime = 15, để bắn được thì phải chờ thêm 5 giây nữa, Time.time = 15, OK hiểu
             if (Time.time >= shotTime)
             {
+                PlaySound(fireSound);
                 Instantiate(bullet, shotPoint.position, transform.rotation);
                 shotTime = Time.time + timeBetweenShot;
             }
+        }
+    }
+
+    public void PlaySound(AudioClip audio)
+    {
+        if(audioSource != null)
+        {
+            audioSource.PlayOneShot(audio);
         }
     }
 }

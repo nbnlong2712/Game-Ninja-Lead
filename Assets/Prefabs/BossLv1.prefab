@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1000
   maxHealth: 1000
-  speed: 6
+  speed: 10
   timeBetweenAttack: 4
   damage: 2
   timeDie: 5
@@ -1151,3 +1151,4 @@ MonoBehaviour:
   stopDistance: 5
   shotPoint: {fileID: 7073962753375199976}
   bullet: {fileID: 7709815356017053169, guid: 59e5f14bdc043294c860e127cb88d28b, type: 3}
+  enemyChild: {fileID: 4940684421386115942, guid: 42181ca1da07330459504fe1f0118562, type: 3}
