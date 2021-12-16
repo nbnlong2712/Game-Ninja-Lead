@@ -790,7 +790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 150
   maxHealth: 150
-  speed: 12.5
+  speed: 15
   timeBetweenAttack: 3
   damage: 2
   timeDie: 1.5

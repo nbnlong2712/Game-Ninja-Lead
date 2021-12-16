@@ -53,3 +53,6 @@ TagManager:
   - name: Weapon
     uniqueID: 3866224575
     locked: 0
+  - name: Canvas
+    uniqueID: 3764622275
+    locked: 0

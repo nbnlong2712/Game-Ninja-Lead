@@ -657,7 +657,7 @@ MonoBehaviour:
   fullHeart: {fileID: 4606908045521496030, guid: 0aadeea352364314db4867d453a8d469, type: 3}
   lostHeart: {fileID: -4195582761621981391, guid: 0aadeea352364314db4867d453a8d469, type: 3}
   hurtPanel: {fileID: 0}
-  damageSound: {fileID: 0}
+  damageSound: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
 --- !u!50 &8518782093805011009
 Rigidbody2D:
   serializedVersion: 4

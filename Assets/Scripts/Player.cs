@@ -19,9 +19,11 @@ public class Player : MonoBehaviour
     CameraShake cameraShake;
     AudioSource audioSource;
     [SerializeField] AudioClip damageSound;
+    LevelManager levelManager;
 
     void Start()
     {
+        levelManager = FindObjectOfType<LevelManager>();
         cameraShake = Camera.main.GetComponent<CameraShake>();
         animator = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -43,9 +45,10 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        PlaySound(damageSound);
+
         if (health > 0)
         {
+            PlaySound(damageSound);
             CameraShake.Instance.ShakeCamera(8f, 0.2f);
             if (hurtPanel != null)
                 hurtPanel.SetTrigger("hurt");
@@ -79,6 +82,10 @@ public class Player : MonoBehaviour
         animator.SetBool("isDeath", true);
         destroyObjectWithTag("Weapon");
         Invoke("DestroyPlayer", 2);
+        if (levelManager != null)
+        {
+            levelManager.LoadGameOver();
+        }
     }
 
     public void DestroyPlayer()

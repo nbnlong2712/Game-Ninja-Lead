@@ -18,7 +18,25 @@ EditorBuildSettings:
     path: Assets/Scenes/About.unity
     guid: 93343af53730f334cb766fbc98a526a4
   - enabled: 1
+    path: Assets/Scenes/JourneyMap.unity
+    guid: 2727df8efac9d044f8222de3636c5d1d
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: b0ae708eb13b38543a1bfea595a445c1
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: eabd79f3b9ca96540acfefe669e2e969
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: fe4250e74ef97414295d727add86f46b
+  - enabled: 1
+    path: Assets/Scenes/GameWin.unity
+    guid: 677151b189b86e549a374e6c2ba944be
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: b0e98a6ca86c8ad4eaaa060a604fa4d1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8ea0dc4b4e736114a9d6f0d3b5bca591, type: 2}

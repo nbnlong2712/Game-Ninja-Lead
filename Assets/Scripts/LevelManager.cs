@@ -20,6 +20,47 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene("Instruction");
     }
 
+    public void LoadJourneyMap()
+    {
+        SceneManager.LoadScene("JourneyMap");
+    }
+
+    public void LoadGameWin()
+    {
+        StartCoroutine(LoadNewScene("GameWin"));
+    }
+
+    public void LoadGameOver()
+    {
+        StartCoroutine(LoadNewScene("GameOver"));
+    }
+
+    public void LoadLevel1()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
+
+    public void LoadLevel3()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
+
+    public void LoadLevel4()
+    {
+        SceneManager.LoadScene("Level 4");
+    }
+
+    IEnumerator LoadNewScene(string name)
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(name);
+    }
+
     public void QuitGame()
     {
         Application.Quit();

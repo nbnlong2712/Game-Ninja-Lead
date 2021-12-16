@@ -11,10 +11,12 @@ public class BossLv1 : Enemy
     [SerializeField] Transform shotPoint;
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject enemyChild;
+    public bool isDie;
 
     public override void Start()
     {
         base.Start();
+        isDie = false;
         animator = GetComponent<Animator>();
         player = FindObjectOfType<Player>();
     }
@@ -82,6 +84,7 @@ public class BossLv1 : Enemy
     public override void Die()
     {
         base.Die();
+        isDie = true;
         animator.SetBool("isDeath", true);
     }
 }
