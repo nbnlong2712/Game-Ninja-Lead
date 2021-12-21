@@ -11,7 +11,7 @@ public class BossLv1 : Enemy
     [SerializeField] Transform shotPoint;
     [SerializeField] GameObject bullet;
     [SerializeField] GameObject enemyChild;
-    public bool isDie;
+    [HideInInspector] public bool isDie;
 
     public override void Start()
     {
@@ -31,6 +31,7 @@ public class BossLv1 : Enemy
             }
             if (Time.time >= attackTime)
             {
+                print(Time.time + ", " + attackTime);
                 attackTime = Time.time + timeBetweenAttack;
                 animator.SetTrigger("attack");
             }
@@ -39,9 +40,9 @@ public class BossLv1 : Enemy
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.tag == "Player")
         {
-            if(player != null)
+            if (player != null)
             {
                 player.TakeDamage(damage);
             }
@@ -56,9 +57,9 @@ public class BossLv1 : Enemy
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
             shotPoint.rotation = rotation;
-            if(player.transform.position.x > transform.position.x)
+            if (player.transform.position.x > transform.position.x)
             {
-                bullet.transform.localScale = new Vector3(-1, bullet.transform.localScale.y, bullet.transform.localScale.z );
+                bullet.transform.localScale = new Vector3(-1, bullet.transform.localScale.y, bullet.transform.localScale.z);
             }
             else
             {
