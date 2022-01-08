@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Weapon
   - Heart
+  - Shield
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Enemy
   - Player
   - Wall
-  - 
+  - Shield
   - 
   - 
   - 
@@ -55,4 +56,7 @@ TagManager:
     locked: 0
   - name: Canvas
     uniqueID: 3764622275
+    locked: 0
+  - name: Shield
+    uniqueID: 2089414827
     locked: 0

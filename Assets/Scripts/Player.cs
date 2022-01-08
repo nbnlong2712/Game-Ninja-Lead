@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     AudioSource audioSource;
     [SerializeField] AudioClip damageSound;
     LevelManager levelManager;
+    [SerializeField] GameObject healExplosion;
 
     void Start()
     {
@@ -91,6 +92,14 @@ public class Player : MonoBehaviour
     public void DestroyPlayer()
     {
         Destroy(gameObject);
+    }
+
+    public void PlayHealExplosion()
+    {
+        if(healExplosion != null)
+        {
+            Instantiate(healExplosion, transform.position + new Vector3(0, 3, 0), Quaternion.identity);
+        }
     }
 
     public void destroyObjectWithTag(string tag)

@@ -10,6 +10,8 @@ public class TransManager : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(hidePanel());
+        string path = SceneUtility.GetScenePathByBuildIndex(SceneManager.GetActiveScene().buildIndex);
+        string sceneName = path.Substring(0, path.Length - 6).Substring(path.LastIndexOf('/') + 1);
     }
 
     IEnumerator hidePanel()

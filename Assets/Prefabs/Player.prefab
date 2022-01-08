@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b78833bb71c39f4aaae5a871e5c60e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 170
+  speed: 100
   health: 10
   hearts:
   - {fileID: 0}
@@ -658,6 +658,7 @@ MonoBehaviour:
   lostHeart: {fileID: -4195582761621981391, guid: 0aadeea352364314db4867d453a8d469, type: 3}
   hurtPanel: {fileID: 0}
   damageSound: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
+  healExplosion: {fileID: 1521459649522635857, guid: 553e5183b99e78a4da8a6bbcc05fb668, type: 3}
 --- !u!50 &8518782093805011009
 Rigidbody2D:
   serializedVersion: 4

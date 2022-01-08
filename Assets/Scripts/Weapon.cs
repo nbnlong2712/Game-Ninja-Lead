@@ -54,6 +54,16 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    public Vector3 getShotPoint()
+    {
+        return shotPoint.position;
+    }
+
+    public Quaternion getRotation()
+    {
+        return transform.rotation;
+    }
+
     public void PlaySound(AudioClip audio)
     {
         if(audioSource != null)

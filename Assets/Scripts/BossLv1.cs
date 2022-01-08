@@ -31,7 +31,6 @@ public class BossLv1 : Enemy
             }
             if (Time.time >= attackTime)
             {
-                print(Time.time + ", " + attackTime);
                 attackTime = Time.time + timeBetweenAttack;
                 animator.SetTrigger("attack");
             }
